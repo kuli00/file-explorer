@@ -2,7 +2,11 @@ import { File } from '@styled-icons/boxicons-regular';
 import { FileDirectory } from '@styled-icons/octicons';
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.button<{ isSelected: boolean }>`
+interface WrapperProps {
+  isSelected: boolean;
+}
+
+export const Wrapper = styled.button<WrapperProps>`
   background-color: transparent;
   width: 100px;
   height: 85px;
