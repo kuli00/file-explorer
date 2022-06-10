@@ -15,7 +15,6 @@ const createWindow = (): void => {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
     titleBarStyle: 'hidden',
-    titleBarOverlay: true,
     frame: false,
   });
 
