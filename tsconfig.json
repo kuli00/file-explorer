@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "paths": {
+      "Components/*": ["./src/components/*"],
+      "Styles": ["./src/styles/index.ts"],
+      "Contexts/*": ["./src/context/*"],
+      "Main/*": ["./src/*"],
+    },
+    "jsx": "react"
+  },
+  "include": ["src/**/*"],
+}
