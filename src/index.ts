@@ -15,8 +15,8 @@ const createWindow = (): void => {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
     titleBarStyle: 'hidden',
+    transparent: true,
     frame: false,
-    trafficLightPosition: { x: -100, y: -100 },
   });
 
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);

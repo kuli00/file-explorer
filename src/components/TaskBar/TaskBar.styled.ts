@@ -18,11 +18,14 @@ export const Wrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   -webkit-app-region: drag;
+  position: fixed;
+  top: 0;
 `;
 
 export const Button = styled(BaseButton)`
   width: 50px;
   height: 30px;
+  -webkit-app-region: no-drag;
 `;
 
 const iconsContainerStyle = css`
