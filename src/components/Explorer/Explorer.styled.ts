@@ -9,5 +9,5 @@ export const Wrapper = styled.div`
   align-items: flex-start;
   row-gap: 10px;
   column-gap: 10px;
-  padding: 10px 10px 0;
+  padding: 10px;
 `;

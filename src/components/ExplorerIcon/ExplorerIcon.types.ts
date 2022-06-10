@@ -3,3 +3,11 @@ export interface ExplorerIconProps {
   name: string;
   fullPath: string;
 }
+
+export type UseExplorerIcon = (
+  isDir: boolean,
+  fullPath: string,
+) => {
+  handleClick: () => void;
+  currentSelection: string;
+};

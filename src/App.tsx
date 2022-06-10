@@ -1,4 +1,5 @@
 import Explorer from 'Components/Explorer';
+import MainContainer from 'Components/MainContainer';
 import Sidebar from 'Components/Sidebar';
 import TaskBar from 'Components/TaskBar';
 import { AppContextProvider } from 'Contexts/AppContext';
@@ -6,8 +7,6 @@ import type { ReactElement } from 'react';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { GlobalStyle, ThemeProvider } from 'Styles';
-
-import { MainContainer } from './App.styled';
 
 const FileExplorer = (): ReactElement => (
   <AppContextProvider>

@@ -9,10 +9,11 @@ import { Wrapper } from './Explorer.styled';
 export const Explorer = (): ReactElement => {
   const {
     state: { files },
+    actions: { selectFile },
   } = useContext(AppContext);
 
   return (
-    <Wrapper>
+    <Wrapper onClick={() => selectFile(null)}>
       {files?.map((file, idx) => (
         <ExplorerIcon key={`${file.fullPath}-${idx}`} {...file} />
       ))}

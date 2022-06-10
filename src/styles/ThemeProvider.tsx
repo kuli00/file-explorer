@@ -1,6 +1,9 @@
 import type { ReactElement, ReactNode } from 'react';
 import React from 'react';
-import { ThemeProvider as ThemeProviderBase } from 'styled-components';
+import {
+  StyleSheetManager,
+  ThemeProvider as ThemeProviderBase,
+} from 'styled-components';
 
 import { theme } from './theme';
 
@@ -11,6 +14,8 @@ interface ThemeProviderProps {
 }
 
 const ThemeProvider = ({ children }: ThemeProviderProps): ReactElement => (
-  <ThemeProviderBase theme={theme}>{children}</ThemeProviderBase>
+  <StyleSheetManager disableVendorPrefixes>
+    <ThemeProviderBase theme={theme}>{children}</ThemeProviderBase>
+  </StyleSheetManager>
 );
 export default ThemeProvider;
