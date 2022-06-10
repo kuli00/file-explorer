@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   max-height: calc(100vh - ${({ theme }) => theme.headerHeight});
   height: fit-content;
-  overflow: scroll;
+  overflow: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;

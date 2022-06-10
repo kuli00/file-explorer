@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   padding: 10px;
   height: calc(100vh - ${({ theme }) => theme.headerHeight});
-  overflow: scroll;
+  overflow: auto;
   row-gap: 10px;
 
   & button {

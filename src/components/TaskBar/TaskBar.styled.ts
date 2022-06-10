@@ -10,7 +10,7 @@ import {
 import BaseButton from 'Components/Button';
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
   width: 100vw;
   height: calc(${({ theme }) => theme.headerHeight} - 1px);
   border-bottom: 1px solid #0000003c;
