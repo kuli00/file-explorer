@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     overflow: hidden;
     font-family: Helvetica, sans-serif;
+    cursor: url(${cursor}) 24 24, auto;
   }
   
   body {
@@ -18,10 +19,6 @@ const GlobalStyle = createGlobalStyle`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  * {
-    cursor: url(${cursor}) 24 24, auto;
   }
   
   ::-webkit-scrollbar {
