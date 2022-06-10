@@ -64,10 +64,6 @@ export const useAppContext = (): AppContextProps => {
     return () => clearInterval(intervalId);
   });
 
-  useEffect(() => {
-    console.log('curr', state.currentSelection);
-  }, [state.currentSelection]);
-
   return {
     state,
     actions,

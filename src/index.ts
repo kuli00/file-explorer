@@ -1,9 +1,9 @@
-import { app, BrowserWindow, ipcMain, protocol } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string;
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
 const DEFAULT_WINDOW_HEIGHT = 600;
-const DEFAULT_WINDOW_WIDTH = 800;
+const DEFAULT_WINDOW_WIDTH = 1000;
 
 let mainWindow: BrowserWindow;
 
@@ -20,8 +20,6 @@ const createWindow = (): void => {
   });
 
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
-
-  mainWindow.webContents.openDevTools();
 };
 app.on('ready', createWindow);
 

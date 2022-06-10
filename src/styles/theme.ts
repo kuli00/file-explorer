@@ -5,5 +5,5 @@ export const theme = {
     selection: '#D60D13CF',
     fileIcon: '#FFFFFF',
   },
-  headerHeight: '35px',
+  headerHeight: '60px',
 };

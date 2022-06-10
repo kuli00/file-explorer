@@ -2,6 +2,14 @@ import styled, { css } from 'styled-components';
 
 import type { ButtonProps } from './Button.types';
 
+const activeButton = css`
+  color: black;
+
+  &:after {
+    background-color: ${({ theme }) => theme.palette.secondary};
+  }
+`;
+
 export const Button = styled.button<ButtonProps>`
   border: none;
   background: none;
@@ -42,13 +50,8 @@ export const Button = styled.button<ButtonProps>`
     left: 0;
   }
 
-  ${({ theme, active }) =>
-    active &&
-    css`
-      color: black;
-
-      &:after {
-        background-color: ${theme.palette.secondary};
-      }
-    `}
+  ${({ active }) => active && activeButton};
+  &:active {
+    ${activeButton}
+  }
 `;
