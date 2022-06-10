@@ -15,6 +15,7 @@
       "Styles": ["./src/styles/index.ts"],
       "Contexts/*": ["./src/context/*"],
       "Main/*": ["./src/*"],
+      "Static/*": ["./static/*"]
     },
     "jsx": "react"
   },

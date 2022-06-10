@@ -1,7 +1,7 @@
-import { useExplorerIcon } from 'Components/ExplorerIcon/ExplorerIcon.hook';
 import type { ReactElement } from 'react';
 import React from 'react';
 
+import { useExplorerIcon } from './ExplorerIcon.hook';
 import {
   DirectoryIcon,
   FileIcon,

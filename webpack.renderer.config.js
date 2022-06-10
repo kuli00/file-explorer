@@ -13,6 +13,7 @@ module.exports = {
       Styles: path.join(__dirname, './src/styles/index.ts'),
       Contexts: path.join(__dirname, './src/context'),
       Main: path.join(__dirname, './src'),
+      Static: path.join(__dirname, './static'),
     },
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
   },

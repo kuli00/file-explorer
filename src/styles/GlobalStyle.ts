@@ -1,7 +1,24 @@
-import { createGlobalStyle } from 'styled-components';
+import background from 'Static/background.jpg';
+import cursor from 'Static/cursor.png';
+import { createGlobalStyle, css } from 'styled-components';
 
-import background from '../../static/background.jpg';
-import cursor from '../../static/cursor.png';
+const scrollBarStyles = css`
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.palette.secondary};
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${({ theme }) => theme.palette.secondary}CF;
+  }
+`;
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -24,21 +41,7 @@ const GlobalStyle = createGlobalStyle`
     cursor: url(${cursor}) 24 24, auto;
   }
   
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #FDEE09;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #FDEE09CF;
-  }
+  ${scrollBarStyles};
 `;
 
 export default GlobalStyle;

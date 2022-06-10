@@ -14,6 +14,7 @@ import {
   UpIcon,
   Wrapper,
 } from './TaskBar.styled';
+
 export const TaskBar = (): ReactElement => {
   const {
     state: { parentDirectory },

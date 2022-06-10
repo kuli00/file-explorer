@@ -28,18 +28,16 @@ export const Button = styled(BaseButton)`
   -webkit-app-region: no-drag;
 `;
 
-const iconsContainerStyle = css`
+const ButtonsContainer = styled.div`
   display: flex;
   column-gap: 10px;
 `;
 
-export const FunctionButtons = styled.div`
-  ${iconsContainerStyle};
+export const FunctionButtons = styled(ButtonsContainer)`
   margin-left: 10px;
 `;
 
-export const SystemButtons = styled.div`
-  ${iconsContainerStyle};
+export const SystemButtons = styled(ButtonsContainer)`
   margin-right: 10px;
 `;
 

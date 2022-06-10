@@ -1,17 +1,12 @@
-import type { ReactElement, ReactNode } from 'react';
+import type { ReactElement } from 'react';
 import React from 'react';
 import {
   StyleSheetManager,
   ThemeProvider as ThemeProviderBase,
 } from 'styled-components';
 
+import type { ThemeProviderProps } from './styled';
 import { theme } from './theme';
-
-type Children = ReactNode | ReactElement;
-
-interface ThemeProviderProps {
-  children: Children | Children[];
-}
 
 const ThemeProvider = ({ children }: ThemeProviderProps): ReactElement => (
   <StyleSheetManager disableVendorPrefixes>
