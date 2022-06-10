@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from 'electron';
+import { app, BrowserWindow, ipcMain, Menu } from 'electron';
 
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string;
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
@@ -14,11 +14,12 @@ const createWindow = (): void => {
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
-    titleBarStyle: 'customButtonsOnHover',
+    titleBarStyle: 'hidden',
     titleBarOverlay: true,
     frame: false,
   });
 
+  Menu.setApplicationMenu(null);
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 };
 app.on('ready', createWindow);
