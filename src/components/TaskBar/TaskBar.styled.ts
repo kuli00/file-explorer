@@ -25,6 +25,7 @@ export const Wrapper = styled.header`
 export const Button = styled(BaseButton)`
   width: 50px;
   height: 30px;
+  -webkit-app-region: no-drag;
 `;
 
 const iconsContainerStyle = css`
